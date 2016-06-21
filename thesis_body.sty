@@ -1,0 +1,173 @@
+%%
+%%
+%% A style file suitable for the formatting of a PhD thesis
+%%
+%% Copyright (C) 2007  Dave May
+%%
+%%
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+%%
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{thesis_body}[2007/24/09 v0.1 Thesis Style]
+
+%% FRONT MATTER ENVIROMENTS
+\newcommand\AbstractName{Abstract}
+\newcommand\AcknowledgmentsName{Acknowledgements}
+\newcommand\StatementName{Statement}
+\newcommand\FinalName{Final thoughts ...}
+\newcommand\AddendumName{Addendum}
+\newcommand\SumarioName{Sumario}
+
+\if@titlepage
+	\newenvironment{abstract}{%
+	\cleardoublepage
+	\pagestyle{plain}
+	\begin{center}%
+    		\phantom{X} 
+		\vspace{10mm}
+       		\Large{\bfseries  \AbstractName} \vspace{5mm}
+       	\end{center}
+      	\@beginparpenalty\@lowpenalty
+        \@endparpenalty\@M
+        }%
+     {\par\vfil\null\endtitlepage}
+\fi
+
+\if@titlepage
+	\newenvironment{statement}{%
+	\cleardoublepage
+	\pagestyle{plain}
+	\begin{center}%
+    		\phantom{X} 
+		\vspace{10mm}
+       		\Large{\bfseries  \StatementName} \vspace{5mm}
+       	\end{center}
+      	\@beginparpenalty\@lowpenalty
+        \@endparpenalty\@M
+        }%
+  {\par\vfil\null\endtitlepage}
+\fi
+
+\if@titlepage
+	\newenvironment{acknowledgments}{%
+	\cleardoublepage
+	\pagestyle{plain}
+	\begin{center}%
+    		\phantom{X} 
+		\vspace{10mm}
+       		\Large{\bfseries  \AcknowledgmentsName} \vspace{5mm}
+       	\end{center}
+      	\@beginparpenalty\@lowpenalty
+        \@endparpenalty\@M
+        }%
+     {\par\vfil\null\endtitlepage}
+\fi
+
+\if@titlepage
+        \newenvironment{thoughts}{%
+        \cleardoublepage
+        \pagestyle{plain}
+        \begin{center}%
+                \phantom{X}
+                \vspace{10mm}
+                \Large{\bfseries  \FinalName} \vspace{5mm}
+        \end{center}
+        \@beginparpenalty\@lowpenalty
+        \@endparpenalty\@M
+        }%
+     {\par\vfil\null\endtitlepage}
+\fi
+
+\if@titlepage
+        \newenvironment{addendum}{%
+        \cleardoublepage
+        \pagestyle{plain}
+        \begin{center}%
+                \phantom{X}
+                \vspace{10mm}
+                \Large{\bfseries  \AddendumName} \vspace{5mm}
+        \end{center}
+        \@beginparpenalty\@lowpenalty
+        \@endparpenalty\@M
+        }%
+     {\par\vfil\null\endtitlepage}
+\fi
+
+%% Look and feel for chapter pages
+\RequirePackage[newcentury]{quotchap} % charter, palatino, avantgarde, bookman, courier, helvetica, newcentury, times, utopia
+%\RequirePackage[avantgarde]{quotchap} % charter, palatino, avantgarde, bookman, courier, helvetica, newcentury, times, utopia
+%\RequirePackage[bookman]{quotchap} % charter, palatino, avantgarde, bookman, courier, helvetica, newcentury, times, utopia
+%\RequirePackage[fourier]{quotchap} % charter, palatino, avantgarde, bookman, courier, helvetica, newcentury, times, utopia
+
+
+
+%% Table of contents
+%% - depth in document -1,0,1,2,3,4 => part, chapter, section, subsection, subsubsection 
+\setcounter{tocdepth}{1} % only list to depth of sections
+
+
+%% Headers and footers
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 			% trash defaults for fancy header
+\headheight=15pt 	% required if we make gap between text in header and rule too large
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{ {\textsc{\thesection \ \ \ #1}}}}
+\fancyhead[LE]{ \textbf{\thepage} \ \ \ \ \ \ \ \ \ \ {\small \leftmark} \vspace{0.5mm} }
+\fancyhead[RO]{{\small \rightmark} \ \ \ \ \ \ \ \ \ \ \textbf{\thepage}  \vspace{0.5mm}}
+
+% modify the plain page style applied to the \chapter pages. Bold and center the page number
+\fancypagestyle{plain}{%
+	\fancyhf{} % clear all header and footer fields
+	\fancyfoot[C]{\bfseries \thepage} % center
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+%	\vspace{20mm} % move chapter marking up page
+}
+
+%% Change section headings
+\RequirePackage[calcwidth]{titlesec}
+%\RequirePackage[rigidchapters, calcwidth]{titlesec}
+
+% section
+\titleformat{\section}[hang]{\sffamily\bfseries}
+%{\Large\thesection}{12pt}{\Large}[{\titlerule[0.5pt]}]
+{\Large\thesection}{12pt}{\Large}
+% sub section
+\titleformat{\subsection}[hang]{\sffamily \slshape}
+{\large\thesubsection}{12pt}{\large}
+% sub sub section
+\titleformat{\subsubsection}[hang]{\sffamily \slshape}
+{\thesubsubsection}{12pt}{}
+
+
+\newcommand{\Chapter}[1]{\chapter{#1}\hrule\vspace{20mm}}
+
+
+% Code for creating empty pages
+% No headers on empty pages before new chapter
+% All empty pages are NOT numbered
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}
+    \thispagestyle{empty} % plain leaves page numbers
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+
+
+
+%%
+%% End of file `thesis.sty
