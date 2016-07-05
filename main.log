@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.26)  5 JUL 2016 16:39
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.26)  14 JUN 2016 13:07
+>>>>>>> 605bbafd91b995bfdee82fc6aeefbd83e35910e4
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,6 +941,7 @@ File: t1pnc.fd 2001/06/04 font definitions for T1/pnc.
 Chapter 1.
 [1
 
+<<<<<<< HEAD
 ] <HistoryCH1.png, id=173, 1601.985pt x 810.02625pt>
 File: HistoryCH1.png Graphic file (type png)
  <use HistoryCH1.png>
@@ -984,17 +989,61 @@ Chapter 9.
 ]
 Chapter 10.
 [21] [22
+=======
+] [2
+
+]
+Chapter 2.
+[3] [4
+
+]
+Chapter 3.
+[5] [6
+
+]
+Chapter 4.
+[7] [8
+
+]
+Chapter 5.
+[9] [10
+
+]
+Chapter 6.
+[11] [12
+
+]
+Chapter 7.
+[13] [14
+
+]
+Chapter 8.
+[15] [16
+
+]
+Chapter 9.
+[17] [18
+
+]
+Chapter 10.
+[19] [20
+>>>>>>> 605bbafd91b995bfdee82fc6aeefbd83e35910e4
 
 ]
 Chapter 11.
 
 AED: lastpage setting LastPage
+<<<<<<< HEAD
 [23]
+=======
+[21]
+>>>>>>> 605bbafd91b995bfdee82fc6aeefbd83e35910e4
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
 (./main.aux)
@@ -1014,10 +1063,28 @@ Here is how much of TeX's memory you used:
  306322 words of memory out of 5000000
  15179 multiletter control sequences out of 15000+600000
  28381 words of font info for 59 fonts, out of 8000000 for 9000
+=======
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
+(./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 80DC0649F8B81FE1D6A5A4C7D06FBF33;1390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
+ ) 
+Here is how much of TeX's memory you used:
+ 11977 strings out of 493089
+ 178149 string characters out of 6134842
+ 306198 words of memory out of 5000000
+ 15167 multiletter control sequences out of 15000+600000
+ 25468 words of font info for 55 fonts, out of 8000000 for 9000
+>>>>>>> 605bbafd91b995bfdee82fc6aeefbd83e35910e4
  1142 hyphenation exceptions out of 8191
  45i,11n,47p,966b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+<<<<<<< HEAD
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
@@ -1041,4 +1108,24 @@ PDF statistics:
  292 compressed objects within 3 object streams
  56 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+live/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/ncntrsbk/uncb8a.pfb>
+Output written on main.pdf (27 pages, 191703 bytes).
+PDF statistics:
+ 311 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 605bbafd91b995bfdee82fc6aeefbd83e35910e4
 
