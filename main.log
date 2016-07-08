@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.26)  8 JUL 2016 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.26)  8 JUL 2016 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ Chapter 1.
 [1
 
 
-] <HistoryCH1.png, id=189, 1601.985pt x 810.02625pt>
+] <HistoryCH1.png, id=194, 1601.985pt x 810.02625pt>
 File: HistoryCH1.png Graphic file (type png)
  <use HistoryCH1.png>
 Package pdftex.def Info: HistoryCH1.png used on input line 126.
@@ -950,13 +950,13 @@ Overfull \hbox (30.60944pt too wide) in paragraph at lines 126--127
 
 ]
 Chapter 2.
-[5] <milleagech2.jpg, id=220, 691.58376pt x 691.58376pt>
+[5] <milleagech2.jpg, id=225, 691.58376pt x 691.58376pt>
 File: milleagech2.jpg Graphic file (type jpg)
  <use milleagech2.jpg>
 Package pdftex.def Info: milleagech2.jpg used on input line 156.
 (pdftex.def)             Requested size: 207.47672pt x 207.47672pt.
 
-<stdch2.png, id=222, 2007.5pt x 1003.75pt>
+<stdch2.png, id=227, 2007.5pt x 1003.75pt>
 File: stdch2.png Graphic file (type png)
  <use stdch2.png>
 Package pdftex.def Info: stdch2.png used on input line 168.
@@ -978,7 +978,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 178.
 
-<linregch2.png, id=231, 505.89pt x 505.89pt>
+<linregch2.png, id=236, 505.89pt x 505.89pt>
 File: linregch2.png Graphic file (type png)
  <use linregch2.png>
 Package pdftex.def Info: linregch2.png used on input line 184.
@@ -987,7 +987,7 @@ Package pdftex.def Info: linregch2.png used on input line 184.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./stdch2.png>] <histch2.png, id=244, 301.125pt x 301.125pt>
+[7 <./stdch2.png>] <histch2.png, id=249, 301.125pt x 301.125pt>
 File: histch2.png Graphic file (type png)
 
 <use histch2.png>
@@ -1041,20 +1041,20 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 73A171E3BEDC0774702DE99803965AD6;1657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
+(rerunfilecheck)             Checksum: 6869BFD042893148571A9B80F1087FE8;1729.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
- 12063 strings out of 493089
- 179287 string characters out of 6134842
- 308085 words of memory out of 5000000
- 15216 multiletter control sequences out of 15000+600000
+ 12065 strings out of 493089
+ 179311 string characters out of 6134842
+ 308088 words of memory out of 5000000
+ 15217 multiletter control sequences out of 15000+600000
  31471 words of font info for 71 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  45i,11n,48p,1200b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1081,10 +1081,10 @@ ublic/cm-super/sfsx2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncn
 trsbk/uncb8a.pfb>
-Output written on main.pdf (33 pages, 856359 bytes).
+Output written on main.pdf (33 pages, 856676 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

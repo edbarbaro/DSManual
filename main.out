@@ -10,16 +10,17 @@
 \BOOKMARK [1][]{section.5.2}{5.2 Analytics 1: Describing your data}{chapter.5}% 10
 \BOOKMARK [1][]{section.5.3}{5.3 Analytics 2: Cleaning your data}{chapter.5}% 11
 \BOOKMARK [0][]{chapter.6}{6 Numerical Modeling}{}% 12
-\BOOKMARK [1][]{section.6.1}{6.1 Basics}{chapter.6}% 13
-\BOOKMARK [1][]{section.6.2}{6.2 Designing smart numerical experiments}{chapter.6}% 14
+\BOOKMARK [1][]{section.6.1}{6.1 Initial data analysis}{chapter.6}% 13
+\BOOKMARK [1][]{section.6.2}{6.2 Exploratory data analysis}{chapter.6}% 14
 \BOOKMARK [0][]{chapter.7}{7 Machine learning tools}{}% 15
 \BOOKMARK [1][]{section.7.1}{7.1 Supervised methods}{chapter.7}% 16
 \BOOKMARK [1][]{section.7.2}{7.2 unsupervised methods}{chapter.7}% 17
-\BOOKMARK [0][]{chapter.8}{8 Databases}{}% 18
-\BOOKMARK [1][]{section.8.1}{8.1 SQL}{chapter.8}% 19
-\BOOKMARK [1][]{section.8.2}{8.2 NoSQL}{chapter.8}% 20
-\BOOKMARK [0][]{chapter.9}{9 Map Reduce}{}% 21
-\BOOKMARK [1][]{section.9.1}{9.1 Hadoop}{chapter.9}% 22
-\BOOKMARK [0][]{chapter.10}{10 Big Data}{}% 23
-\BOOKMARK [0][]{chapter.11}{11 Communicating Results}{}% 24
-\BOOKMARK [1][]{section.11.1}{11.1 Visuals}{chapter.11}% 25
+\BOOKMARK [1][]{section.7.3}{7.3 Titanic exploration}{chapter.7}% 18
+\BOOKMARK [0][]{chapter.8}{8 Databases}{}% 19
+\BOOKMARK [1][]{section.8.1}{8.1 SQL}{chapter.8}% 20
+\BOOKMARK [1][]{section.8.2}{8.2 NoSQL}{chapter.8}% 21
+\BOOKMARK [0][]{chapter.9}{9 Map Reduce}{}% 22
+\BOOKMARK [1][]{section.9.1}{9.1 Hadoop}{chapter.9}% 23
+\BOOKMARK [0][]{chapter.10}{10 Big Data}{}% 24
+\BOOKMARK [0][]{chapter.11}{11 Communicating Results}{}% 25
+\BOOKMARK [1][]{section.11.1}{11.1 Visuals}{chapter.11}% 26
