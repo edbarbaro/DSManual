@@ -65,9 +65,9 @@
 
 Welcome to ``An introduction to applied data science'' a 5-day original workshop thought and written by Eduardo Barbaro and Coen Jonker. At the end of this week you will be able to (i) understand the basics of data science, (ii) mathematically describe data, and (iii) munge\footnote{describes the constructive operation of tying together systems and interfaces that were not specifically designed to interoperate} it into an easy and communicable form. As the course develops, we will teach you how to access and look at data in innovative ways, as well as to extract value from big data. We aim a significant part of this training to help you create and interpret a diverse set of numerical models, as well as to calculate descriptive analytics while fully understanding their meaning. We also focus on presentation, and how to show your results in beautiful smart charts and tables.
 
-Although all the computations will be performed in Mobiquity's AWS cloud, we will guide you through all the necessary steps to install any software necessary for this course in your local machines. We use Mobiquity's AWS cloud to get the benefit of running our code in a fast, secure, and controlled environment.
+Although all the computations will be performed in a cloud environment, we will guide you through all the necessary steps to install any software necessary for this course in your local machines. We take advantage of a cloud computing environment to get to run our code in a fast, secure, and controlled domain.
 
-This manual is divided in 11 independent short chapters. In Chapter \ref{DS} we set the stage with a short introduction to then answer together a bold question: ``what is data science?''. In Chapter \ref{basics} we will spend some time to recap some basic mathematical concepts needed throughout the entire workshop. Chapters \ref{P1} and \ref{P2} are devoted to (important) practicalities, such as installing software/libraries and getting familiar with the AWS cloud environment. We also teach you some basic programming skills, so we are all on the same page. We move forward to our first data harvest, in Chapter \ref{harvesting}. We teach you how to manipulate data, as well as to properly describe and clean it. Chapter \ref{numerics} covers the basics of designing a smart numerical experiment. 
+This manual is divided in 11 independent short chapters. In Chapter \ref{DS} we set the stage with a short introduction to then answer together a bold question: ``what is data science?''. In Chapter \ref{basics} we will spend some time to recap some basic mathematical concepts needed throughout the entire workshop. Chapters \ref{P1} and \ref{P2} are devoted to (important) practicalities, such as installing software/libraries and getting familiar with the cloud environment. We also teach you some basic programming skills, so we are all on the same page. We move forward to our first data harvest, in Chapter \ref{harvesting}. We teach you how to manipulate data, as well as to properly describe and clean it. Chapter \ref{numerics} covers the basics of designing a smart numerical experiment. 
 
 Chapters \ref{MLearn} to \ref{bigData} cover more advanced topics such as machine learning tools, databases (SQL and no-SQL) as well as a mapreduce implementation (Hadoop). In particular, in Chapter \ref{bigData} we show in detail how to load, transform, and extract value from real big data. Finally, in Chapter \ref{Commun} we come back to basics to show you rudiments of plotting and how to communicate your results. 
 
@@ -173,11 +173,11 @@ The mean or the median alone do not tell us the whole story about our data. We s
 
 \newpage
 
-The standard deviation is a measure of the dispersion of your data. That means a small standard deviation indicates little dispersion around the average. In contrast, a high standard deviation indicates significant dispersion around the average. As shown in Fig. \ref{fig:std}, the width of one standard deviation ``covers'' roughly 68$\%$ of the data dispersion. That number increases to 99$\%$ for three standard deviations.
+The standard deviation is a measure of the dispersion of your data. That means a small standard deviation indicates little dispersion around the average. In contrast, a high standard deviation indicates significant dispersion around the average. As shown in Fig. \ref{fig:std}, the width of one standard deviation ``covers'' roughly 68$\%$ of the data dispersion. That number increases to over 99$\%$ for three standard deviations.
 
 \section{Interpreting a plot, tracing a linear fit, and understanding R$^2$}
 
-Another important topic we want to talk is how to interpret plots. As we show in Chapter \ref{Commun} plots are a fundamental way to communicate your data-science results within your company. For now, we will focus on extracting some interesting information from Fig. \ref{fig:linR}. Later, we go in much greater detail on how to design and interpret such results.
+Another important topic we want to talk is how to interpret plots. As we show in Chapter \ref{Commun} plots are a fundamental way to communicate your data-science results within your company. For now, we will focus on extracting some interesting information from Fig. \ref{fig:linR}. Later, we go in much greater detail on how to design plots and interpret such model results.
 
 \begin{figure}[h]
 	\begin{center}
@@ -187,27 +187,33 @@ Another important topic we want to talk is how to interpret plots. As we show in
 	\label{fig:linR}
 \end{figure} 
 
-We observe a negative correlation between MPG and weight of the car. As the weight increases, MPG decreases. Note that this follows intuitively, since we expect heavier cars to use more fuel and therefore have lower MPG. The blue line represents a linear fit between the variables. The criterion to obtain the linear fit is to minimize the distance between the fit and the data points. This difference is called residuum (shown in red in Fig. \ref{fig:linR}). In Chapter \ref{numerics} we will cover the design of such simple numerical model in great detail. 
+We observe a negative correlation between MPG and weight of the car. As the weight increases, MPG decreases. Note that this follows intuitively, since we expect heavier cars to use more fuel and therefore have lower MPG. The blue line represents a linear fit between the variables. The criterion to obtain the linear fit is to minimize the distance between the fit and the data points. This difference is called residuum (shown in red in Fig. \ref{fig:linR}). In Chapter \ref{numerics} we will cover the design of such simple numerical model in much greater detail. 
 
 \newpage
 
-For now let's assume we know how to implement such model - but how do we measure its performance? A simple way to achieve that is by calculating the so-called \textit{determination coefficient}, more known as (R$^2$). R$^2$ is a metric that uses the residua information to determine if a linear fit is acceptable or not. It ranges from 0 to 1, where zero means no correlation between variables and 1 means a perfect fit. In the case shown in Fig. \ref{fig:linR} we find that $R^2=0.75$, indicating a good linear fit between MPG and weight of the car. In other words, the weight of the car can explain 75$\%$ of the MPG's variance. Generally speaking we define $R^2>0.5$ as acceptable. The 
+For now let's assume we know how to implement such model - but how do we measure its performance? A simple way to achieve that is by calculating the so-called \textit{determination coefficient}, known as (R$^2$). R$^2$ is a metric that uses the residua information to determine if a linear fit is acceptable or not. It ranges from 0 to 1, where zero means no correlation between variables and 1 means a perfect fit. In the case shown in Fig. \ref{fig:linR} we find that $R^2=0.75$, indicating a good linear fit between MPG and weight of the car. In other words, the weight of the car can explain 75$\%$ of the MPG's variance. Generally speaking we define $R^2>0.5$ as acceptable. 
 
 \section{Histograms}
 
-The last topic we want to cover in this Chapter is histograms. A histogram is nothing more than a plot consisting of bars whose area represents the frequency of a given variable. In Fig. \ref{fig:histch2} we can visualize a histogram showing the frequency of the MPG variable:
+The last topic we want to cover in this Chapter is histograms. A histogram is nothing more than a bar plot whose area represents the frequency of a given variable. In Fig. \ref{fig:histch2} we can visualize a histogram showing the frequency of the MPG variable:
 
 \begin{figure}[h]
 	\begin{center}
 			\includegraphics[scale=0.7]{histch2}
 	\end{center}
-	\caption{Histogram showing the MPG frequency distribution. This data was extracted from the 1974 Motor Trend US magazine.}
+	\caption{Histogram showing the MPG frequency distribution. The red line emphasize its distribution. This data was extracted from the 1974 Motor Trend US magazine.}
 	\label{fig:histch2}
 \end{figure} 
 
 \newpage
 
-Note that the width of the bars represents the class interval. In our case every bar shows the frequency for an interval equal to 5 MPG. We can conclude from this plot that most cars have a MPG usage between 15 and 20. This plot also triggers many more questions, such as why is the frequency of cars using 30-35 MPG higher if compared to 25-30 MPG? In order to answer this type of questions our strategy is to combine a number of plots and understand the variables behaviour. We will demonstrate that in the next Chapters.
+Note that the width of the bars represents the class interval. In our case every bar shows the frequency for an interval equal to 5 MPG. We can conclude from this plot that most cars have a MPG usage between 15 and 20 followed by 20-25 MPG (see also the red line). This plot also triggers many more questions, such as why is the frequency of cars using 30-35 MPG higher if compared to 25-30 MPG? It is not  possible to answer this question by only looking at this plot. The correct strategy is to combine a number of different analyses and plot more variables to understand this behaviour. We will exemplify that in Chapters \ref{harvesting} and \ref{numerics}.
+
+
+
+
+
+
 
 \chapter{Practicalities: Software Installations and AWS cloud}\label{P1}
 \chapter{Practicalities: Programming language and libraries}\label{P2}

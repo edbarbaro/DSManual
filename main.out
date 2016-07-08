@@ -1,23 +1,25 @@
 \BOOKMARK [0][]{chapter.1}{1 A historical view on data science}{}% 1
-\BOOKMARK [0][]{chapter.2}{2 But what is data science?}{}% 2
-\BOOKMARK [0][]{chapter.3}{3 Some basics and beyond}{}% 3
-\BOOKMARK [0][]{chapter.4}{4 Practicalities: Software Installations and AWS cloud}{}% 4
-\BOOKMARK [0][]{chapter.5}{5 Practicalities: Programming language and libraries}{}% 5
-\BOOKMARK [0][]{chapter.6}{6 Harvesting data}{}% 6
-\BOOKMARK [1][]{section.6.1}{6.1 Data Manipulation}{chapter.6}% 7
-\BOOKMARK [1][]{section.6.2}{6.2 Analytics 1: Describing your data}{chapter.6}% 8
-\BOOKMARK [1][]{section.6.3}{6.3 Analytics 2: Cleaning your data}{chapter.6}% 9
-\BOOKMARK [0][]{chapter.7}{7 Numerical Modeling}{}% 10
-\BOOKMARK [1][]{section.7.1}{7.1 Basics}{chapter.7}% 11
-\BOOKMARK [1][]{section.7.2}{7.2 Designing smart numerical experiments}{chapter.7}% 12
-\BOOKMARK [0][]{chapter.8}{8 Machine learning tools}{}% 13
-\BOOKMARK [1][]{section.8.1}{8.1 Supervised methods}{chapter.8}% 14
-\BOOKMARK [1][]{section.8.2}{8.2 unsupervised methods}{chapter.8}% 15
-\BOOKMARK [0][]{chapter.9}{9 Databases}{}% 16
-\BOOKMARK [1][]{section.9.1}{9.1 SQL}{chapter.9}% 17
-\BOOKMARK [1][]{section.9.2}{9.2 NoSQL}{chapter.9}% 18
-\BOOKMARK [0][]{chapter.10}{10 Map Reduce}{}% 19
-\BOOKMARK [1][]{section.10.1}{10.1 Hadoop}{chapter.10}% 20
-\BOOKMARK [0][]{chapter.11}{11 Big Data}{}% 21
-\BOOKMARK [0][]{chapter.12}{12 Communicating Results}{}% 22
-\BOOKMARK [1][]{section.12.1}{12.1 Visuals}{chapter.12}% 23
+\BOOKMARK [0][]{chapter.2}{2 Some basics and beyond}{}% 2
+\BOOKMARK [1][]{section.2.1}{2.1 Mean, median, and standard deviation}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{2.2 Interpreting a plot, tracing a linear fit, and understanding R2}{chapter.2}% 4
+\BOOKMARK [1][]{section.2.3}{2.3 Histograms}{chapter.2}% 5
+\BOOKMARK [0][]{chapter.3}{3 Practicalities: Software Installations and AWS cloud}{}% 6
+\BOOKMARK [0][]{chapter.4}{4 Practicalities: Programming language and libraries}{}% 7
+\BOOKMARK [0][]{chapter.5}{5 Harvesting data}{}% 8
+\BOOKMARK [1][]{section.5.1}{5.1 Data Manipulation}{chapter.5}% 9
+\BOOKMARK [1][]{section.5.2}{5.2 Analytics 1: Describing your data}{chapter.5}% 10
+\BOOKMARK [1][]{section.5.3}{5.3 Analytics 2: Cleaning your data}{chapter.5}% 11
+\BOOKMARK [0][]{chapter.6}{6 Numerical Modeling}{}% 12
+\BOOKMARK [1][]{section.6.1}{6.1 Basics}{chapter.6}% 13
+\BOOKMARK [1][]{section.6.2}{6.2 Designing smart numerical experiments}{chapter.6}% 14
+\BOOKMARK [0][]{chapter.7}{7 Machine learning tools}{}% 15
+\BOOKMARK [1][]{section.7.1}{7.1 Supervised methods}{chapter.7}% 16
+\BOOKMARK [1][]{section.7.2}{7.2 unsupervised methods}{chapter.7}% 17
+\BOOKMARK [0][]{chapter.8}{8 Databases}{}% 18
+\BOOKMARK [1][]{section.8.1}{8.1 SQL}{chapter.8}% 19
+\BOOKMARK [1][]{section.8.2}{8.2 NoSQL}{chapter.8}% 20
+\BOOKMARK [0][]{chapter.9}{9 Map Reduce}{}% 21
+\BOOKMARK [1][]{section.9.1}{9.1 Hadoop}{chapter.9}% 22
+\BOOKMARK [0][]{chapter.10}{10 Big Data}{}% 23
+\BOOKMARK [0][]{chapter.11}{11 Communicating Results}{}% 24
+\BOOKMARK [1][]{section.11.1}{11.1 Visuals}{chapter.11}% 25
