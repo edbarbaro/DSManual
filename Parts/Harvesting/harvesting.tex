@@ -11,7 +11,7 @@ The foremost aspect determining the success of your project is your research que
 	\item Simplicity
 \end{itemize}
 
-From all these aspects, clarity is absolutely the most important. A good research question should have only one interpretation and it should be very clear (free of ambiguity). It sets the stage for the methodology development. The topic should also be important to you and to your company at the moment. It should bring benefit and motivate discussions so you can continue with further developments. It should support different points of view and generate various perspectives. Furthermore, your research question hast to be supported by data you own (or will very soon). You don't want to realize in the middle of your project that there's not enough data to conduct your research. And finally, the rule is the simpler the better. Break down the complexity of one big question in smaller achievable questions. With the research question(s) at hand we move to integrating different datasets into our algorithm.
+From all these aspects, clarity is absolutely the most important. A good research question should have only one interpretation and it should be very clear (free of ambiguity). It sets the stage for the methodology development. The topic should also be important to you and to your company at the moment. It should bring benefit and motivate discussions so you can continue with further developments. It should support different points of view and generate various perspectives. Furthermore, your research question hast to be supported by data you own (or will very soon). You don't want to realize in the middle of your project that there's not enough data to conduct your research. And finally, the rule is the simpler the better. Break down the complexity of one big question into smaller achievable questions. With the research question(s) at hand we move to integrating different datasets into our algorithm.
 
 \section{Data Integration}\label{dataM}
 
@@ -30,7 +30,7 @@ Real data very often comes in the form of the so-called .csv (comma-separated va
 
 Another very common way to acquire data is by directly reading it from a database (e.g. SQL/Mongo) into your algorithm. There are connectors (e.g. ODBC for SQL) or libraries (pymongo, RMongo), which allow seemly coupling with our numerical algorithms. The main advantage of using a ``query-language'' to import data into our algorithm is flexibility, i.e. we can alter/expand these queries very easily.
 
-Lastly, nowadays much of our data lies on the cloud. Therefore, we also cover how to read data from the Amazon cloud - from an S3 bucket. A bucket is a container used to store unlimited amounts of data. Therefore, you can have one big bucket for all of your information or, separate buckets for different types of data. Again, integration with these buckets is simple for both \textbf{Python} and \textbf{R}. Next, we will do some data manipulation.
+Lastly, nowadays much of our data lies on the cloud. Therefore, we also cover how to read data from the Amazon cloud - placed in an S3 bucket. A bucket is a container used to store unlimited amounts of data. Therefore, you can have one big bucket for all of your information or, separate buckets for different types of data. Again, integration with these buckets is simple for both \textbf{Python} and \textbf{R}. Next, we will do some data manipulation.
 
 \section{Data Manipulation}\label{dataM} 
 
@@ -38,9 +38,9 @@ The first thing we want to do after loading our data into the system is to be ab
 
 \subsection{Describing your data}\label{Analy.1}
 
-Despite how big is your data it is fundamental for the ``human component'' in data science that we are able to visualize the data. That means inspect the first rows to have an impression of how the data looks. Check the column names to ensure they are properly assigned. Identify columns which data is not correct or simply useless, e.g. only zeros/blanks. These will give us already some insight on how to first handle the data. 
+The first thing to do when you get your hands on a new dataset is to understand its structure. Despite how big your data is, it is fundamental for the ``human component'' in data science that we are able to visualize the data. That means inspect the first rows to have an impression of how the data looks. Check the column names to ensure they are properly assigned. Identify columns which data is not correct or simply useless, e.g. only zeros/blanks. These will give us already some insight on how to first handle the data. 
 
-Something we should always do is to take advantage of some built-in functions in most programming languages. For this first inspection functions like \textit{describe} \textbf{(python)} and \textit{summary} \textbf{(R)} will do exactly what we want. They will calculate summary statistics of each column (even if column data types are variable, or some columns have no information). 
+Something we should always do is to take advantage of some built-in functions in most programming languages. For this first inspection functions like \textit{describe} \textbf{(python)} and \textit{summary} \textbf{(R)} will do exactly what we want. They calculate summary statistics of each column (even if column data types are variable, or some columns have no information). This step may reveal unusual or extreme values, or unexpected missing data.
 
 Another very important step is to plot your data. This is a very good way to actually see how your data looks like. Plot the columns against each other to look for correlations. Plot it as a time line to see changes or temporal patterns. Plot multiple columns together to investigate (dis)similarities during a certain period. Anyway, plot it and plot it more!
 
@@ -53,9 +53,17 @@ More than often we find that our raw datasets are full of empty cells and ``NULL
 \item each observation is saved in its own row
 \end{itemize}
 
-These rules make a what is called tidy dataset. If your dataset is tidy, you can easily perform comparisons amongst columns, such as ``bigger/smaller than average'' or ``equals to''. 
+These rules make a what is called tidy dataset. If your dataset is tidy, you can easily perform comparisons amongst columns, such as ``bigger/smaller than average'' or ``equals to''. This allows for filtering operations (reducing the amount of rows) and sub-setting variables (reducing the number of columns). 
+
+%http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
+
+Apart from that, as a rule of the thumb, columns with more than 50$\%$ empty/blank/noise can be safely deleted \footnote{50$\%$ is not a hard criterion but can be use as a first ``guesstimate''.}. In addition, we can always subset our data, or bind columns/rows from another dataset. We will practice that a lot during the course. As a word of warning, note that sometimes missing data can be important to tell us something about what we are measuring, i.e. there may be a good reason why that particular data is missing.
+
+Sometimes we are also looking to data which seems clean but it is actually not. This type of issue happens when you have typos in the database (for instance ``The Nederlands''), or multiple abbreviations (e.g. ``GB'' and ``UK'' or ``NLD'' and ``NL''). Another common issue is the one of duplicated rows. That means rows with exactly the same information. You want to get rid of those, as we show it in the course.
+
+The examples mentioned above seem simple or trivial, but they are the hardest to catch. So, pay attention if some data merge or filtering does not work accordingly.
 
 
-http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
 
-Apart from that, as a rule of the thumb, columns with more than 50$\%$ empty/blank/noise can be safely deleted \footnote{50$\%$ is not a hard criterion but can be use as a first ``guesstimate''.}. In addition, we can always subset our data, or bind columns/rows from another dataset. We will practice that a lot during the course.  
+
+ 
