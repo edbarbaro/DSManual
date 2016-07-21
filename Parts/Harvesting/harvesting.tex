@@ -1,0 +1,61 @@
+In this Chapter you will be exposed to a few topics, which are fundamental to prepare your data for analysis. We start from the most important one: designing a good research question. The motto is: \textit{``think before start modeling''}. With a good question (or questions) in hand, we jump to collect, put together, and integrate data into our algorithms. We go through some of the tricks to describe and finally clean the data. In summary, after this chapter your data will be understood, clean, and ready for analysis.
+
+\section{The research question}\label{RQ}
+
+The foremost aspect determining the success of your project is your research question. There is a certain set of attributes characterizing a good research question:
+
+\begin{itemize}
+	\item Clarity
+	\item Current importance
+	\item Searchability
+	\item Simplicity
+\end{itemize}
+
+From all these aspects, clarity is absolutely the most important. A good research question should have only one interpretation and it should be very clear (free of ambiguity). It sets the stage for the methodology development. The topic should also be important to you and to your company at the moment. It should bring benefit and motivate discussions so you can continue with further developments. It should support different points of view and generate various perspectives. Furthermore, your research question hast to be supported by data you own (or will very soon). You don't want to realize in the middle of your project that there's not enough data to conduct your research. And finally, the rule is the simpler the better. Break down the complexity of one big question in smaller achievable questions. With the research question(s) at hand we move to integrating different datasets into our algorithm.
+
+\section{Data Integration}\label{dataM}
+
+There are many ways data can be integrated into our algorithms. Here are a few examples:
+
+\begin{itemize}
+\item hard-coded (for testing purposes)
+\item loaded from multiple external files (e.g. excel csv, text file)
+\item read from a database (e.g. SQL)
+\item imported from a cloud (e.g. Amazon S3 buckets)
+\end{itemize}
+
+The first one (hard-coded) is mostly used during the built of the algorithm. Think, for example, of testing and debugging. In that stage, we want to try a few sample artificial data points to understand exactly what our code is doing. In doing so, we can correct mistakes much easier (and faster) than if utilizing an entire data set. 
+
+Real data very often comes in the form of the so-called .csv (comma-separated values) files. These files are exported from Excel and are a handy way to share small datasets. Nowadays, there are pre-build commands in any major programming language to read such files, e.g. read.csv() in \textbf{R} or the csv.reader() in \textbf{Python}.
+
+Another very common way to acquire data is by directly reading it from a database (e.g. SQL/Mongo) into your algorithm. There are connectors (e.g. ODBC for SQL) or libraries (pymongo, RMongo), which allow seemly coupling with our numerical algorithms. The main advantage of using a ``query-language'' to import data into our algorithm is flexibility, i.e. we can alter/expand these queries very easily.
+
+Lastly, nowadays much of our data lies on the cloud. Therefore, we also cover how to read data from the Amazon cloud - from an S3 bucket. A bucket is a container used to store unlimited amounts of data. Therefore, you can have one big bucket for all of your information or, separate buckets for different types of data. Again, integration with these buckets is simple for both \textbf{Python} and \textbf{R}. Next, we will do some data manipulation.
+
+\section{Data Manipulation}\label{dataM} 
+
+The first thing we want to do after loading our data into the system is to be able to look at it. That means quickly describing it and later cleaning it. We quickly glance at both processes in this Section.
+
+\subsection{Describing your data}\label{Analy.1}
+
+Despite how big is your data it is fundamental for the ``human component'' in data science that we are able to visualize the data. That means inspect the first rows to have an impression of how the data looks. Check the column names to ensure they are properly assigned. Identify columns which data is not correct or simply useless, e.g. only zeros/blanks. These will give us already some insight on how to first handle the data. 
+
+Something we should always do is to take advantage of some built-in functions in most programming languages. For this first inspection functions like \textit{describe} \textbf{(python)} and \textit{summary} \textbf{(R)} will do exactly what we want. They will calculate summary statistics of each column (even if column data types are variable, or some columns have no information). 
+
+Another very important step is to plot your data. This is a very good way to actually see how your data looks like. Plot the columns against each other to look for correlations. Plot it as a time line to see changes or temporal patterns. Plot multiple columns together to investigate (dis)similarities during a certain period. Anyway, plot it and plot it more!
+
+\subsection{Cleaning your data}\label{Analy.2}
+
+More than often we find that our raw datasets are full of empty cells and ``NULL'' values, nonsense characters or ``zeros''. These datasets may miss headers, contain wrong data types, encoding, etc. When dealing with messy datasets the most important rule is twofold:
+
+\begin{itemize}
+\item each variable should be saved in its own column
+\item each observation is saved in its own row
+\end{itemize}
+
+These rules make a what is called tidy dataset. If your dataset is tidy, you can easily perform comparisons amongst columns, such as ``bigger/smaller than average'' or ``equals to''. 
+
+
+http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
+
+Apart from that, as a rule of the thumb, columns with more than 50$\%$ empty/blank/noise can be safely deleted \footnote{50$\%$ is not a hard criterion but can be use as a first ``guesstimate''.}. In addition, we can always subset our data, or bind columns/rows from another dataset. We will practice that a lot during the course.  
